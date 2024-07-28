@@ -3,7 +3,7 @@ import axios from 'axios'
 import {useNavigate} from 'react-router-dom'
 import { Router } from "react-router-dom";
 
-const BASE_URL = "http://localhost:5000/api/v1/transaction/";
+const BASE_URL = `https://expenseease-70qj.onrender.com${/api/v1/transaction/}`;
 
 
 const GlobalContext = React.createContext()
