@@ -28,7 +28,7 @@ const Login = () => {
   {
     
     try{
-    const response=await axios.post("http://localhost:5000/api/v1/user/login",{email,password},{
+    const response=await axios.post(`https://expenseease-70qj.onrender.com${/api/v1/user/login}`,{email,password},{
       headers: {
           'Content-Type': 'application/json' // Set the content type
         }
