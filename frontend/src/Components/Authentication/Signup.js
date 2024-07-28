@@ -39,7 +39,7 @@ const Signup = () => {
   {
     
     try{
-    const response=await axios.post("http://localhost:5000/api/v1/user/signup",{name,email,password,confirmpassword,gender},{
+    const response=await axios.post(`https://expenseease-70qj.onrender.com${/api/v1/user/signup}`,{name,email,password,confirmpassword,gender},{
       headers: {
           'Content-Type': 'application/json' // Set the content type
         }
